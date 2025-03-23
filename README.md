@@ -51,3 +51,7 @@
 ### Запуск всех тестов в пакете `tests`:
 ```bash
 python -m pytest -v --driver Chrome --driver-path C:\chromedriver.exe tests
+
+### Запуск отдельного теста (например, из файла test_reg_page_check.py):
+```bash 
+python -m pytest -v --driver Chrome --driver-path C:\chromedriver.exe tests\test_reg_page_check.py -k "test_reg_page_check_all_fields_text"
